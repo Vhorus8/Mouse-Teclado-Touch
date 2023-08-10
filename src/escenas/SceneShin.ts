@@ -10,7 +10,7 @@ export class ShinHat extends Container {
         shin.anchor.set(0.5);
         hat.anchor.set(0.5);
         hat.scale.set(0.2);
-        hat.scale.x = -2;
+        hat.scale.x = -1;
         hat.position.set(70,-210);
         
         this.addChild(shin);  // agregar una instancia al stage

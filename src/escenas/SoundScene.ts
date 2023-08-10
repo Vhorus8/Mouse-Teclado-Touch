@@ -34,10 +34,10 @@ export class SoundScene extends Container implements IUpdateable {
         allCont.addChild(btnVolumeDown);
 
         // // (crea un ToggleButton.ts en la carpeta ui)
-        // const toggleMute = new ToggleButton(Texture.from("Toggle On"), Texture.from("Toggle Off"));
+        // const togMute = new ToggleButton(Texture.from("Toggle On"), Texture.from("Toggle Off"));
         const togMute = new Button(Texture.from("Toggle On"), this.toggleMute);
         togMute.position.set(415,200);
-        // toggleMute.on(ToggleButton.TOGGLE_EVENT, this.toggleMute, this);
+        // togMute.on(ToggleButton.TOGGLE_EVENT, this.toggleMute, this);
         allCont.addChild(togMute);
     }
 

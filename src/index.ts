@@ -1,8 +1,10 @@
 import { Application, Loader, SCALE_MODES, settings } from 'pixi.js'
 import { assets } from './assets';
 import { Keyboard } from './utils/Keyboard';
+// import { ShinHat } from './escenas/SceneShin';
+import { UIDemo } from './escenas/UIDemo';
 // import { TickerScene } from './escenas/TickerScene';
-import { SoundScene } from './escenas/SoundScene';
+// import { SoundScene } from './escenas/SoundScene';
 // import { TickerScene2 } from './escenas/TickerScene(Clase8-2)';
 
 export const WIDTH = 640;
@@ -51,10 +53,12 @@ window.dispatchEvent(new Event("resize"));
 Loader.shared.add(assets);
 
 Loader.shared.onComplete.add(()=>{
-	const myScene = new SoundScene();
+	const myScene = new UIDemo();
+	// const sScene = new SoundScene();
 	// myScene.x = WIDTH / 2;
 	// myScene.y = HEIGHT / 2;
 	app.stage.addChild(myScene);
+	// app.stage.addChild(sScene);
 
 	// Ticker.shared.add(function(deltaFrame){
 	// 	myScene.update(Ticker.shared.deltaMS, deltaFrame);

@@ -19,8 +19,8 @@ export class UIDemo extends Container {
         // sólo para mouse
         this.buttonMouse = new Button(
             Texture.from("Button1"),
-            Texture.from("Button1Over"),
-            Texture.from("Button1Down"),
+            // Texture.from("Button1Over"),
+            // Texture.from("Button1Down"),
             this.onButtonClick.bind(this)
         );
         this.buttonMouse.scale.set(0.2);

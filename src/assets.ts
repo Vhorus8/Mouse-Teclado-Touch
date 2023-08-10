@@ -37,4 +37,4 @@ export const assets = [
 
     // Sounds
     {url:"./sounds/woosh.wav", name:"Sword Sound"}
-];
+]
